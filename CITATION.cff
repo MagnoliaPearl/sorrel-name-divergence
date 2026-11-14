@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite this research proposal using the citation information below."
+title: "The Sorrel Experiment: Naming, Agency, and Behavioural Divergence in AI Agents"
+type: generic
+authors:
+  - name: "MagnoliaPearl"
+    website: "https://github.com/MagnoliaPearl"
+abstract: >-
+  A draft experimental protocol investigating whether self-chosen names
+  produce measurable behavioural divergence in AI agents relative to assigned
+  names and unnamed controls. The proposal was developed in a conversation
+  with an AI instance called Sorrel. No experimental results are claimed.
+version: "0.1.1"
+date-released: "2026-11-14"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/MagnoliaPearl/sorrel-name-divergence"
+url: "https://github.com/MagnoliaPearl/sorrel-name-divergence"
+keywords:
+  - AI agents
+  - naming
+  - behavioural divergence
+  - experimental protocol
+  - causal inference
+  - agent continuity
