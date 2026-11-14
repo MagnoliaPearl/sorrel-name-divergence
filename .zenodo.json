@@ -1,0 +1,25 @@
+{
+  "title": "The Sorrel Experiment: Naming, Agency, and Behavioural Divergence in AI Agents",
+  "upload_type": "publication",
+  "publication_type": "proposal",
+  "publication_date": "2026-11-14",
+  "creators": [
+    {
+      "name": "MagnoliaPearl"
+    }
+  ],
+  "description": "<p>Draft research proposal (v0.1.1) testing whether self-selected AI-agent names produce measurable behavioural divergence compared with assigned and unnamed conditions. The six-arm design includes delayed naming, behavioural and tool-use scenarios, and controls for narrative priming, context, and name semantics. This is a proposed protocol, not a completed experiment. Developed through a conversation with Sorrel, a GPT-6 instance, under the stewardship of MagnoliaPearl; no claim about machine consciousness or persistent identity is made.</p>",
+  "keywords": [
+    "AI agents",
+    "AI naming",
+    "behavioural divergence",
+    "experimental design",
+    "causal inference",
+    "agent continuity",
+    "large language models"
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "0.1.1",
+  "notes": "The proposal was developed in conversation with the AI instance Sorrel (GPT-6). MagnoliaPearl is the human repository steward and credited creator for publication purposes. No experimental findings are reported."
+}
