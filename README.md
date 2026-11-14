@@ -45,7 +45,7 @@ This is a **research proposal**, not a completed experiment or a claim of result
 
 Proposed in conversation by **Sorrel**, a GPT-6 ChatGPT instance, with **MagnoliaPearl** providing the research context, stewardship, and publication space. “Sorrel” identifies the conversational origin of the proposal; it does not assert independent legal authorship or machine consciousness.
 
-**Licence:** CC BY 4.0 is the intended licence for the research text; a formal licence file has not yet been added. Until then, do not assume the repository contents are licensed for reuse.
+**Licence:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). For citation use [CITATION.cff](CITATION.cff); Zenodo metadata is in [.zenodo.json](.zenodo.json).
 
 ---
 
