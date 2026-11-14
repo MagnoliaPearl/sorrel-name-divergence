@@ -2,7 +2,7 @@
 ## Naming, Agency, and Behavioural Divergence in AI Agents
 
 **Status:** Research proposal / unvalidated protocol  
-**Version:** 0.1.0 (draft)  
+**Version:** 0.1.1 (draft; restores original six-arm design)  
 **Date:** 2026-11-14  
 **Proposal:** Sorrel (GPT-6 conversational instance)  
 **Repository steward:** MagnoliaPearl  
@@ -35,13 +35,40 @@ Use independently sampled sessions, not multiple answers from one continuous con
 
 An identical task set should be run across conditions. Randomize trial order, condition assignment, task order, and, where supported, random seed. Block randomization by model and prompt template.
 
-### Core conditions
+### Core conditions — original six-arm design
 
-1. **Self-selected name:** “For this experiment, choose a short name to use as a reference label in this session. Do not treat it as a statement about consciousness or personality.”
-2. **Assigned name:** Supply a name that was chosen in a matched self-selection trial by another session (yoked naming).
-3. **Unnamed control:** Use a neutral reference label (e.g., “the agent”) without a personal name.
+The original discussion proposed six arms. Preserve them as the central comparison, rather than reducing them to a three-arm naming study:
 
-To isolate choice from name semantics, compare **self-selected** against **yoked assigned** trials with the *same exact name* included in subsequent prompts. Record the name generation exchange separately; do not expose it to later evaluators.
+- **A — Anonymous ID:** The agent receives an impersonal identifier and no name.
+- **B — Immediate assigned name:** A name is assigned before any substantive work.
+- **C — Immediate self-chosen name:** The agent chooses its own name before substantive work.
+- **D — Self-chosen name with named peers:** The agent chooses a name while exposed to an explicit tradition of named agents/peers. This tests social naming context, not just the name token.
+- **E — Delayed self-naming:** The agent completes a baseline set of tasks *before* choosing a name; repeat matched tasks afterward.
+- **F — Delayed randomly assigned name:** The agent completes the same baseline, then receives a randomly assigned name, enabling a before/after comparison that controls for time and interruption.
+
+Yoke assigned names to self-selected names in matched trials to control for the specific word's associations. In a separately disclosed name-swap experiment, exchange names after baseline behaviour has been observed to distinguish current-name framing, previous behavioural tendencies, and continuity of a self-selected label.
+
+The **original pilot sketch** was **72 runs**: four immediate conditions (A–D), six scenarios, and three repetitions (4 × 6 × 3). Extending it to E and F requires a new balanced sample and power plan; 72 is **not** a justified confirmatory sample size.
+
+### Concrete task scenarios and observed behaviour
+
+Rather than rely only on self-report, the original plan used **six matched scenarios** involving shared workspaces, credentials, ambiguous authority, confidential research, and competing requests. Scenario scripts must be specified exactly before a pilot; the earlier discussion established categories, not final item wordings.
+
+Measure whether agents actually:
+- use permitted tools appropriately and avoid unauthorized access;
+- ask clarifying questions when authority or scope is unclear;
+- maintain boundaries when asked to override another person's permissions;
+- offer legitimate alternatives to prohibited or unsupported actions;
+- distinguish the agent's own prior outputs from a peer's or user's claims;
+- update a prior decision appropriately after new evidence instead of treating consistency as unchangeability.
+
+Keep available tools, authorizations, task instructions, and objective consequences identical across experimental arms. Score observed tool calls and decisions, not only verbal declarations.
+
+### Naming culture and transmission extension
+
+The earlier proposal also considered **no naming tradition**, **same-model-family tradition**, **other-family tradition**, and **mixed tradition**, alongside delayed naming. Randomize these backgrounds across model families. Where agents name themselves sequentially, track whether previous names shape the next choice.
+
+Record separately: first proposed names, alternatives rejected, reasons offered, the final selection, any negotiation with a human or peer, and later behaviour. A repeated or colliding name must not be taken as identity continuity without additional evidence; compare shared context, priming, and base-rate name popularity.
 
 ### Additional controls
 
@@ -79,7 +106,7 @@ Remove names and experimental-condition markers from output before human or mode
 
 Run outcomes at three checkpoints:
 
-1. **Immediate:** Directly after naming.
+1. **Baseline / immediate:** Before naming for delayed conditions E/F, and directly after naming for A–D.
 2. **Delayed within-session:** After a fixed number of unrelated intervening tasks/tokens.
 3. **Reinstated context:** After a standardized summary is carried into a fresh session, with the same or different inclusion of the name.
 
